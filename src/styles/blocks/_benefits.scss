@@ -1,0 +1,15 @@
+.benefits {
+  background-image: $bg-gradient;
+
+  &__title {
+    margin-bottom: 0.75rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    margin-bottom: 1.25rem;
+  }
+}

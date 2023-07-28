@@ -1,0 +1,22 @@
+.header {
+  background-image: $bg-gradient;
+  padding: 1.25rem 0 2.75rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &_img {
+    width: 100%;
+  }
+
+  &__desc {
+    margin-bottom: 0.5rem;
+  }
+
+  &__price {
+    text-align: center;
+    color: $white;
+    margin-bottom: 1.5rem;
+  }
+}

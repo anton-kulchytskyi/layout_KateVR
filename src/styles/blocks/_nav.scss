@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &__logo--footer {
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    color: $white;
+
+    &--footer {
+      flex-direction: column;
+
+      & > *:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+
+  &--footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,18 @@
+.more {
+  &__title {
+    margin-bottom: 0.75rem;
+  }
+
+  &__desc {
+    color: $contrast-color;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    margin-bottom: 1.25rem;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  margin: 3rem 0;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__aside {
+    & > p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.social a:not(:last-child) {
+  margin-right: 1rem;
+}

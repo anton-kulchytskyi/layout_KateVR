@@ -1,0 +1,90 @@
+.contacts {
+  & p:first-child {
+    font-size: 14px;
+    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.error-message {
+  display: none;
+  color: $error-color;
+}
+
+.form-field {
+  position: relative;
+
+  &__label {
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    transition: top 0.3s, color 0.3s;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $dark-grey;
+    background-color: transparent;
+    margin-bottom: 1rem;
+    color: $white;
+    font-size: 14px;
+
+    &:hover,
+    &:valid {
+      border-bottom-color: $contrast-color;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .form-field__label,
+    &:valid ~ .form-field__label {
+      top: 0;
+      color: $contrast-color;
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid {
+      border-bottom-color: $error-color;
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid ~ .form-field__label {
+      top: 0;
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid ~ .form-field__label > .error-message {
+      display: block;
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid ~ .form-field__label > .label-message {
+      display: none;
+    }
+    
+    &--message {
+      height: 5.5rem;
+      margin-bottom: 2rem;
+      resize: none;
+
+      &:not(:focus) {
+        border-bottom-color: $dark-grey;
+      }
+
+      &:not(:focus):not(:placeholder-shown):valid {
+        border-bottom-color: $contrast-color;
+      }
+    }
+  }
+}
+
+// .error-message {
+//   display: none;
+//   color: $error-color;
+// }

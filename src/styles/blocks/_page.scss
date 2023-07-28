@@ -1,0 +1,15 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    background-image: $bg-gradient;
+  }
+
+  &__section {
+    padding: 3rem 0;
+
+    &:nth-child(odd) {
+      background-color: $bg-black;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.about {
+  background-image: $bg-gradient;
+
+  &__desc {
+    margin-bottom: 2rem;
+  }
+
+  &__play {
+    margin-bottom: 5rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &::before {
+      content: "Hello,";
+      position: absolute;
+      top: -1.5rem;
+      color: $contrast-color;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 0.75rem;
+    }
+  }
+}

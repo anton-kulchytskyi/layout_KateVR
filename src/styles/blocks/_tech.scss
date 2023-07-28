@@ -1,0 +1,65 @@
+.tech {
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+
+  &__img {
+    position: relative;
+
+    & img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.plus-in-circle {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color: $contrast-color;
+  border-radius: 50%;
+  border: solid 2px #ffffff24;
+
+  &--1 {
+    top: -6%;
+    left: 37%;
+  }
+
+  &--2 {
+    top: 40%;
+    left: 65%;
+  }
+
+  &--3 {
+    top: 80%;
+    left: 10%;
+  }
+
+  &:hover::after {
+    height: 0;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center top;
+    transition: height 0.5s ease-in-out;
+  }
+
+  &::after {
+    width: 1px;
+    height: 12px;
+  }
+
+  &::before {
+    width: 12px;
+    height: 1px;
+  }
+}
