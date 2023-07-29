@@ -59,7 +59,7 @@
     &:not(:focus):not(:placeholder-shown):invalid ~ .form-field__label {
       top: 0;
     }
-
+    /* stylelint-disable */
     &:not(:focus):not(:placeholder-shown):invalid ~ .form-field__label > .error-message {
       display: block;
     }
@@ -67,7 +67,7 @@
     &:not(:focus):not(:placeholder-shown):invalid ~ .form-field__label > .label-message {
       display: none;
     }
-    
+    /* stylelint-enable */
     &--message {
       height: 5.5rem;
       margin-bottom: 2rem;

@@ -36,10 +36,6 @@
     left: 10%;
   }
 
-  &:hover::after {
-    height: 0;
-  }
-
   &::after,
   &::before {
     content: "";
@@ -61,5 +57,9 @@
   &::before {
     width: 12px;
     height: 1px;
+  }
+
+  &:hover::after {
+    height: 0;
   }
 }
