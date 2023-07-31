@@ -1,5 +1,20 @@
 .link {
   position: relative;
+  height: 3rem;
+  line-height: 3rem;
+
+  &--footer {
+    height: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &:hover {
+    background-color: #110e25;
+    
+    & .mobile-link {
+      color: $contrast-color;
+    }
+  }
 
   &::after {
     content: "";

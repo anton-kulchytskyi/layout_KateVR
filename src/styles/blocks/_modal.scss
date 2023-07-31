@@ -1,18 +1,22 @@
-.modal__container {
+.modal-container {
   background-color: $bg-drop-down;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  overflow: scroll;
   transform: translateY(-100%);
   transition: transform 1s ease-in-out;
 
   &:target {
     transform: translateY(0);
+  }
+
+  &--youtube-video {
+    background-color: $bg-drop-down;
+    padding-top: 4rem;
   }
 }

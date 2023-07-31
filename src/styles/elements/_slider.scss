@@ -13,7 +13,7 @@
     background-position: center center;
     background-repeat: no-repeat;
 
-    @for $num from 1 through 3 {
+    @for $num from 1 through 5 {
       &--#{$num} {
         background-image: url(../images/mobile/mobile-#{$num}.png);
       }

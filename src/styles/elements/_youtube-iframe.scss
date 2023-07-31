@@ -1,0 +1,9 @@
+.youtube-container {
+  position: relative;
+
+  &__video {
+    width: 20rem;
+    height: 16rem;
+    margin: auto 0;
+  }
+}

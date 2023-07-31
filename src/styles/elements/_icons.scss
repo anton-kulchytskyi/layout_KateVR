@@ -1,23 +1,51 @@
-// .icon {
-//   height: $icon-size;
-//   width: $icon-size;
+.icon {
+  display: block;
 
-//   background-size: contain;
-//   background-position: center;
-//   background-repeat: no-repeat;
+  height: $icon-size;
+  width: $icon-size;
 
-//   &--social {
-//     &:hover path {
-//       fill: $contrast-color;
-//     }
-//   }
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-//   &--close {
-//     float: right;
-//     margin-top: 1.25rem;
-//   }
+  &--social {
+    display: inline-block;
+    &:hover path {
+      fill: $contrast-color;
+    }
+  }
 
-//   &--left {
-//     margin-top: 1.25rem;
-//   }
-// }
+  &--fb {
+    background-image: url(../images/icons/fb.svg);
+  }
+
+  &--twitter {
+    background-image: url(../images/icons/twitter.svg);
+  }
+
+  &--youtube {
+    background-image: url(../images/icons/youtube.svg);
+  }
+
+  &--reddit {
+    background-image: url(../images/icons/reddit.svg);
+  }
+
+  &--close {
+    background-image: url(../images/icons/close.svg);
+    float: right;
+    margin: 1.25rem 1.25rem 0 0;
+  }
+
+  &--left {
+    background-image: url(../images/icons/arrow-left.svg);
+    margin: 1.25rem 0 0 1.25rem;
+  }
+
+  &--video {
+    position: absolute;
+    margin: 0;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}

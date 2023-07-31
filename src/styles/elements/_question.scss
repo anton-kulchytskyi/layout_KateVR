@@ -1,0 +1,17 @@
+.question {
+  border: 1px solid $contrast-color;
+  margin: 0.5rem 0;
+  padding: 1.25rem 0.75rem;
+
+  & > p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  & > p:not(:first-child) {
+    display: none;
+  }
+
+  &:hover > p {
+    display: block;
+  }
+}
